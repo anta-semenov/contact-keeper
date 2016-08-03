@@ -1,0 +1,15 @@
+.acf-field {
+  padding: 5px 0px;
+}
+
+.acf-field--header {
+  font-size: 0.5em;
+  padding-bottom: 2px;
+}
+
+.acf-field--input {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #C1C1C1;
+  resize: none;
+}

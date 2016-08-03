@@ -1,0 +1,37 @@
+.acf-header {
+  width: 380px;
+  height: 20px;
+  padding: 10px;
+  background-color: #2771B3;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.acf-close-button {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffffff
+}
+
+.acf-close-button::before,
+.acf-close-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 10px;
+  background-color: #f24a4a;
+}
+.acf-close-button::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.acf-close-button::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
