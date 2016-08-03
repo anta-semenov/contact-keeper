@@ -4,7 +4,7 @@ import './Footer.css'
 
 const Footer = ({onSave}) => (
   <div className='acf-footer'>
-    <Link to='/contact-keeper/' className='acf-save-button' onClick={onSave}>Save</Link>
+    <Link to='/' className='acf-save-button' onClick={onSave}>Save</Link>
   </div>
 )
 

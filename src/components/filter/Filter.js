@@ -12,16 +12,16 @@ export default class Filter extends React.Component {
   }
 
   onChange(e) {
-    this.context.router.push({pathname:'/contact-keeper/', query: {filter: e.target.value}})
+    this.context.router.push({pathname:'/', query: {filter: e.target.value}})
   }
 
   onKeyDown(e) {
     if (e.keyCode === 13) {
-      this.context.router.push({pathname:'/contact-keeper/', query: {filter: this.state.filter}})
+      this.context.router.push({pathname:'/', query: {filter: this.state.filter}})
     }
     if (e.keyCode === 27) {
       this.setState({filter: ''})
-      this.context.router.push({pathname:'/contact-keeper/', query: {filter: ''}})
+      this.context.router.push({pathname:'/', query: {filter: ''}})
     }
   }
 
