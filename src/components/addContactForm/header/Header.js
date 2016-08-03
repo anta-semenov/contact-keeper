@@ -6,7 +6,7 @@ const Header = () => (
   <div className='acf-header'>
     <div style={{color:'#C7DAEC'}}>Contacts Keeper</div>
     <div>
-      <Link to='/'>
+      <Link to='/contact-keeper/'>
         <div className='acf-close-button'/>
       </Link>
     </div>

@@ -7,7 +7,7 @@ import AddContactForm from '../containers/AddContactFormContainer'
 const Root = ({store}) => (
   <Provider store={store}>
     <Router history={browserHistory}>
-      <Route path='/' component={App}>
+      <Route path='/contact-keeper/' component={App}>
         <Route path='addcontact' component={AddContactForm}/>
       </Route>
     </Router>
