@@ -22,9 +22,8 @@ module.exports = {
   ],
   output: {
     path: paths.appBuild,
-    filename: 'static/js/[name].[chunkhash:8].js',
-    chunkFilename: 'static/js/[name].[chunkhash:8].chunk.js',
-    publicPath: publicPath
+    filename: 'main.js',
+    publicPath: '/contact-keeper/'
   },
   resolve: {
     extensions: ['', '.js', '.json'],
@@ -104,7 +103,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.appHtml,
-      favicon: paths.appFavicon,
       minify: {
         removeComments: true,
         collapseWhitespace: true,
@@ -134,6 +132,6 @@ module.exports = {
         screw_ie8: true
       }
     }),
-    new ExtractTextPlugin('static/css/[name].[contenthash:8].css')
+    new ExtractTextPlugin('main.css')
   ]
 };
