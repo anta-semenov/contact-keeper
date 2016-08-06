@@ -23,7 +23,7 @@ module.exports = {
   output: {
     path: paths.appBuild,
     filename: 'main.js',
-    publicPath: '/contact-keeper/'
+    publicPath: publicPath
   },
   resolve: {
     extensions: ['', '.js', '.json'],
